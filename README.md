@@ -14,4 +14,9 @@ Overleaf de la propostion : [Project proposal Overleaf](https://www.overleaf.com
 
 Dépendances :
 
-- !pip install gTTS datasets
+- pip install gTTS datasets
+- pip install librosa --user
+- pip install import_ipynb
+- pip install torchaudio
+- pip install transformers
+- téléchargement de libsndfile
