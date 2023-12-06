@@ -19,4 +19,5 @@ Dépendances :
 - pip install import_ipynb
 - pip install torchaudio
 - pip install transformers
+- pip install jiwer : pour utiliser la *Word Error Rate* (WER)
 - téléchargement de libsndfile
