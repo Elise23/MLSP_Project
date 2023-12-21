@@ -2,15 +2,18 @@
 MLSP Project about Speech Recognition
 
 Présentation :
-Notre but est de développer une pipeline capable de recevoir en entrée des audios contenant des erreurs grammaticales, de transformer ces audios en texte, corriger ces textes et reproduire un audio à partir du texte corrigé en sortie. L'idée est de permettre à un utilisateur d'apprendre une langue aussi bien à l'écrit qu'à l'oral, en visualisant ses erreurs écrites et en attendant la correction orale.
+Notre but est de développer un pipeline capable de recevoir en entrée des audios contenant des erreurs grammaticales, de transformer ces audios en texte, corriger ces textes et reproduire un audio à partir du texte corrigé en sortie. L'idée est de permettre à un utilisateur d'apprendre une langue aussi bien à l'écrit qu'à l'oral, en visualisant ses erreurs écrites et en entendant la correction orale.
+
+Fonctionnement :
+Pour reproduire nos résultats, il suffit de s'assurer d'avoir toutes les dépendances d'installer dans son environnement, d'avoir tous les fichiers présents dans ce répertoire (les audios dans le dossier audio et les notebooks) et d'exécuter les cellules des notebooks. Les notebooks se lisent dans l'ordre suivant :
+1. Dataset_Creation.ipynb
+2. Speech_to_Text.ipynb
+3. GEC.ipynb
+4. TTS.ipynb
+5. pipeline.ipynb
+Concernant le modèle de *speech-to-text* vous pourrez le retrouver sur HuggingFace à ce nom : EliseB/whisper-small-dv. 
 
 Project proposal : [Project_proposal_MLSP](Project_proposal_MSLP.pdf)
-
-Google colab link : [Link](https://colab.research.google.com/drive/1ecoQdEoK5xt0YLhOVaMfNoJ-jCL9usCN)
-
-Word du projet : [Word du projet](https://ulavaldti-my.sharepoint.com/:w:/g/personal/elbea95_ulaval_ca/EZVDjVOVyEdHqlgSIpRpM2cBre4QIlqrjGT-VphBL2eXKg?e=fSwddy)
-
-Overleaf de la propostion : [Project proposal Overleaf](https://www.overleaf.com/project/652eae0da4af5e15c8aa334a)
 
 Dépendances :
 
