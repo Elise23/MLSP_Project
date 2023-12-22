@@ -1,7 +1,7 @@
 # MLSP_Project
 MLSP Project about Speech Recognition
 
-Présentation :
+## Présentation :
 
 Notre but est de développer un pipeline capable de recevoir en entrée des audios contenant des erreurs grammaticales, de transformer ces audios en texte, corriger ces textes et reproduire un audio à partir du texte corrigé en sortie. L'idée est de permettre à un utilisateur d'apprendre une langue aussi bien à l'écrit qu'à l'oral, en visualisant ses erreurs écrites et en entendant la correction orale.
 
