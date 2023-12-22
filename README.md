@@ -32,23 +32,23 @@ Dépendances :
 
 
 ## Biais du pipeline
-Nous allons étudier le biais du pipeline. Pour cela nous allons tester différentes phrases et erreurs pouvant survenir dans la pipeline.
+Nous allons étudier le biais du pipeline. Pour cela nous allons tester différentes phrases et erreurs pouvant survenir dans le pipeline.
 Les exemples sont disponibles dans le dossier [exemples](./exemples/).
 
-[ex_1](./exemples/ex_1/) = Dans un premier temps, nous allons tester la pipeline avec une phrase ne contenant pas de faute. Nous allons donc utiliser la phrase suivante prononcé de la meilleure façon possible : "I don't have a car, but I'm dreaming of it."
+[ex_1](./exemples/ex_1/) = Dans un premier temps, nous allons tester le pipeline avec une phrase ne contenant pas de faute. Nous allons donc utiliser la phrase suivante prononcée de la meilleure façon possible : "I don't have a car, but I'm dreaming of it."
 Nous obtenons la transcription suivante :
 ```text
 i dont have a car but im dreaming of it
 ```
-Nous pouvons observer que la phrase est bien juste. Néanmoins celle-ci ne contient pas de ponctuation, et les mots sont en minuscule. Passon maintenant à sa correction :
+Nous pouvons observer que la phrase est bien juste. Néanmoins celle-ci ne contient pas de ponctuation, et les mots sont en minuscule. Passons maintenant à sa correction :
 ```text
 I don't have a car, but I am dreaming of it.
 ```
-On voit que la ponctuation a été corrigée, mais qu'il n'y a eu aucune correction au niveau des mots. Le modèle les a considérés comme corrects.
+On voit que la ponctuation a été corrigé, mais qu'il n'y a eu aucune correction au niveau des mots. Le modèle les a considérés comme corrects.
 Concernant la synthèse vocale, nous obtenons le résultat suivant :
 [ex_1.mp3](./exemples/ex_1/gtts_GEC/out_0.mp3)
 ___
-[ex_2](./exemples/ex_2/) = En second temps, nous allons tester la pipeline avec une phrase contenant des fautes : "I dont have a car but I dreaming it off."
+[ex_2](./exemples/ex_2/) = En second temps, nous allons tester le pipeline avec une phrase contenant des fautes : "I dont have a car but I dreaming it off."
 Nous obtenons la transcription suivante :
 ```text
 i dont have a car but i dreaming it of
@@ -57,7 +57,7 @@ Nous pouvons observer que la phrase correspond bien à celle qui a été lue, se
 ```text
 I don't have a car, but I dream of it.
 ```
-On voit que la ponctuation a été corrigée encore, Nous notons aussi que des modifications ont été faites en fin de phrase pour rendre la phrase juste. 
+On voit que la ponctuation a été corrigée encore, nous notons aussi que des modifications ont été faites en fin de phrase pour rendre la phrase juste. 
 Concernant la synthèse vocale, nous obtenons le résultat suivant :
 [ex_2.mp3](./exemples/ex_2/gtts_GEC/out_0.mp3)
 ___
@@ -66,24 +66,24 @@ Nous obtenons la transcription suivante :
 ```text
 i dont have a car but i am dreaming it up
 ```
-Nous pouvons observer que la phrase n'a pas compris le "off", il as écrit en "up". Passons à sa correction :
+Nous pouvons observer que la phrase n'a pas compris le "off", il a écrit en "up". Passons à sa correction :
 ```text
 I don't have a car, but I am dreaming of it.
 ```
-On voit que la correction a tout de même fonctionner, et nous a bien corriger la phrase. 
+On voit que la correction a tout de même fonctionné, et nous a bien corrigé la phrase. 
 Concernant la synthèse vocale, nous obtenons le résultat suivant :
 [ex_3.mp3](./exemples/ex_3/gtts_GEC/out_0.mp3)
 ___
-[ex_4](./exemples/ex_4/) = Nous allons essayer d'enregistrer un audio sur fond musical (thème principal de Start Trek 🔥), et de voir comment le pipeline réagis : "I dont have a car but I dreaming it off."
+[ex_4](./exemples/ex_4/) = Nous allons essayer d'enregistrer un audio sur fond musical (thème principal de Start Trek 🔥), et de voir comment le pipeline réagit : "I dont have a car but I dreaming it off."
 Nous obtenons la transcription suivante :
 ```text
 I dont have a car but i dream it
 ```
-Nous pouvons observer que la phrase n'a pas compris la fin de l'enregistrement. Néanmoins il a réussi à extraire la majorité des mots, même avec du bruit musical en fond. Passons à sa correction :
+Nous pouvons observer que le modèle n'a pas compris la fin de l'enregistrement. Néanmoins il a réussi à extraire la majorité des mots, même avec du bruit musical en fond. Passons à sa correction :
 ```text
 I don't have a car, but I dream of it.
 ```
-On voit que la correction a tout de même fonctionner, et nous a bien corriger la phrase. 
+On voit que la correction a tout de même fonctionné, et nous a bien corrigé la phrase. 
 Concernant la synthèse vocale, nous obtenons le résultat suivant :
 [ex_4.mp3](./exemples/ex_4/gtts_GEC/out_0.mp3)
 ___
@@ -96,7 +96,7 @@ On a une transcription ici parfaite de la phrase d'entrée. Passons à sa correc
 ```text
 In the party last night everyone was dancing and having a good time but the music suddenly stops and nobody don't know why.
 ```
-On voit que la correction n'a rien modifié, quand bien même il y a une faute de grammaire ("nobody don't know why"). La phrase pourrait être corrigée en "nobody knew why" ce qui est formellement plus correct.
+On voit que la correction n'a rien modifié, quand bien même il y a une faute de grammaire ("nobody don't know why"). La phrase pourrait être corrigée en "nobody knew why" ce qui est formellement plus correcte.
 Concernant la synthèse vocale, nous obtenons le résultat suivant :
 [ex_5.mp3](./exemples/ex_5/gtts_GEC/out_0.mp3)
 ___
@@ -109,8 +109,8 @@ On a une transcription encore ici parfaite de la phrase d'entrée. Passons à sa
 ```text
 Last weekend, me and my family went on a road trip to the mountains, but the car broke down in the middle of nowhere and no one knew how to fix it.
 ```
-On voit que la correction a bien fonctionée, en prenant en compte le temps de la phrase et les ponctuations. 
+On voit que la correction a bien fonctioné, en prenant en compte le temps de la phrase et les ponctuations. 
 Concernant la synthèse vocale, nous obtenons le résultat suivant :
 [ex_6.mp3](./exemples/ex_6/gtts_GEC/out_0.mp3)
 
-Conclusion:Néanmoins, il ne corrige pas toutes les fautes, et ne prend pas en compte les fautes de grammaire. Il est donc nécessaire de faire attention à ce que l'on dit, et de bien articuler pour que le pipeline fonctionne correctement.
+Conclusion: Néanmoins, il ne corrige pas toutes les fautes, et ne prend pas en compte les fautes de grammaire. Il est donc nécessaire de faire attention à ce que l'on dit, et de bien articuler pour que le pipeline fonctionne correctement.
