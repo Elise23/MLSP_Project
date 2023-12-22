@@ -8,7 +8,7 @@ Notre but est de développer un pipeline capable de recevoir en entrée des audi
 Fonctionnement :
 
 Pour reproduire nos résultats, il suffit de s'assurer d'avoir toutes les dépendances d'installer dans son environnement, d'avoir tous les fichiers présents dans ce répertoire (les audios dans le dossier audio et les notebooks) et d'exécuter les cellules des notebooks. Les notebooks se lisent dans l'ordre suivant :
-1. Dataset_Creation.ipynb
+1. Dataset_Creation.ipynb (ce notebook a servi à créer les audios dans le fichier audios, il n'est donc pas nécessaire de réexécuter son contenu)
 2. Speech_to_Text.ipynb
 3. GEC.ipynb
 4. TTS.ipynb
